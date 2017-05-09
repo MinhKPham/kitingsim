@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/camera_control.cs">
+    <Files>
+      <File FileName="Assets/camera_control.cs" Line="15" Column="20" />
+      <File FileName="Assets/ray.cs" Line="48" Column="54" />
+      <File FileName="Assets/getrekt.cs" Line="1" Column="1" />
+      <File FileName="Assets/clicktomove.cs" Line="1" Column="1" />
+      <File FileName="../New Unity Project 1/Assets/everything i do/Scripts/chase.cs" Line="1" Column="1" />
+      <File FileName="Assets/healthbar.cs" Line="1" Column="1" />
+      <File FileName="Assets/NewBehaviourScript1.cs" Line="1" Column="1" />
+      <File FileName="Assets/color.cs" Line="28" Column="2" />
+      <File FileName="Assets/adjust.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
