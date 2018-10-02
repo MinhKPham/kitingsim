@@ -20,7 +20,7 @@ public class clicktomove : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		kill = 0;
 		t1 = 3;
 		hea = 4;
@@ -116,14 +116,15 @@ public class clicktomove : MonoBehaviour
 				Quaternion newRotation = Quaternion.LookRotation (position - transform.position, Vector3.forward);
 				newRotation.x = 0f;
 				newRotation.z = 0f;
-				
-				
-				//transform.forward=(position-transform.position).normalized;
-				
-				
-				transform.rotation = Quaternion.Slerp (transform.rotation, newRotation, Time.deltaTime*20);
-				//transform.rotation = Quaternion.Euler(newRotation.z,newRotation.y*114,newRotation.x);
-				controller.SimpleMove (transform.forward*speed);
+
+
+                //transform.forward=(position-transform.position).normalized;
+
+
+                transform.rotation = newRotation;
+                
+                //transform.rotation = Quaternion.Euler(newRotation.z,newRotation.y*114,newRotation.x);
+                controller.SimpleMove (transform.forward*speed);
 				
 				//transform.Translate(Vector3.forward*speed);
 				
@@ -155,14 +156,14 @@ public class clicktomove : MonoBehaviour
 				Quaternion newRotation = Quaternion.LookRotation (position - transform.position, Vector3.forward);
 				newRotation.x = 0f;
 				newRotation.z = 0f;
-				
-				
-				//transform.forward=(position-transform.position).normalized;
-				
-				
-				transform.rotation = Quaternion.Slerp (transform.rotation, newRotation, Time.deltaTime*20);
-				//transform.rotation = Quaternion.Euler(newRotation.z,newRotation.y*114,newRotation.x);
-				controller.SimpleMove (transform.forward*speed);
+
+
+                //transform.forward=(position-transform.position).normalized;
+
+
+                transform.rotation = newRotation;
+                //transform.rotation = Quaternion.Euler(newRotation.z,newRotation.y*114,newRotation.x);
+                controller.SimpleMove (transform.forward*speed);
 				
 				//transform.Translate(Vector3.forward*speed);
 				

@@ -9,7 +9,7 @@ public class camera_control : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		speed = 22f;
 		Boundary = 50;
 		tempPos = transform.position;

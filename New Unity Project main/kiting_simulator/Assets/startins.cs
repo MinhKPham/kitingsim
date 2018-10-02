@@ -9,7 +9,7 @@ public class startins : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		
 	}
 	

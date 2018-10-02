@@ -7,7 +7,7 @@ public class restart : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		
 	}
 	

@@ -15,21 +15,21 @@ public class getrekt : MonoBehaviour {
 	float timehit;
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		bool extra = false;
 		speed = 6f;
 		timehit = 1;
-		originalColor = renderer.material.color;
+		originalColor = GetComponent<Renderer>().material.color;
 
 		list=GameObject.FindGameObjectsWithTag ("main");
 		thecube = list [0];
 	}
 	void OnMouseEnter() {
-		renderer.material.color = Color.red;
+		GetComponent<Renderer>().material.color = Color.red;
 	}
 	void OnMouseExit()
 	{
-		renderer.material.color = originalColor;
+		GetComponent<Renderer>().material.color = originalColor;
 	}
 
 	// Update is called once per frame
@@ -47,7 +47,7 @@ public class getrekt : MonoBehaviour {
 		if (t>0.3f && t<0.9f){
 			
 			
-			renderer.material.color = originalColor;
+			GetComponent<Renderer>().material.color = originalColor;
 			
 		}
 
@@ -116,14 +116,14 @@ public class getrekt : MonoBehaviour {
 
 				health-=1;
 				speed+=1f;
-				renderer.material.color = originalColor;
+				GetComponent<Renderer>().material.color = originalColor;
 				clicktomove.t1=0;
 			}
 
 			if (clicktomove.t1<0.3f){
 				
 
-				renderer.material.color = Color.blue;
+				GetComponent<Renderer>().material.color = Color.blue;
 
 			}
 

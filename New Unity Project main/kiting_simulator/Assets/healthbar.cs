@@ -5,8 +5,8 @@ public class healthbar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		renderer.material.color = Color.red;
-		Screen.showCursor = true;
+		GetComponent<Renderer>().material.color = Color.red;
+		Cursor.visible = true;
 	
 	}
 	
